@@ -1,0 +1,34 @@
+
+:root{
+  --s-color:#640D5F;
+
+  --p-color:#eae7df;
+  --t-color:#A594F9
+}
+
+html{
+  scroll-behavior: smooth;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Raleway", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--p-color);
+
+}
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#root{
+  transition: all 0.3s ease;
+}

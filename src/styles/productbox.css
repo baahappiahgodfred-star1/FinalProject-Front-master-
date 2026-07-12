@@ -1,0 +1,36 @@
+.product-box{
+    display: flex;
+    border: 2px solid #640d6028;
+
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.2s linear;
+
+}
+
+.product-box .right{
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+
+}
+.product-box .right img{
+    height: 80%;
+    width: 150px;
+    object-fit: cover;
+}
+.product-box .left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+.product-box:hover{
+    scale: 1.01;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.34);
+    
+}

@@ -1,0 +1,150 @@
+.product-page{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+
+}
+.product-desc{
+    display: flex;
+    margin: 20px;
+    min-height: 450px;
+
+}
+.product-desc .right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    
+}
+
+.product-desc .right img{
+    width:  90%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+.product-desc .right .rating{
+    margin: auto;
+}
+.product-desc .left{
+    width: 120%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 1.2rem;
+}
+.product-desc .left .available{
+    padding: 20px;
+    background-color: rgb(47, 255, 154);
+    width: fit-content;
+    text-transform: uppercase;
+    border-radius: 10px;
+
+}
+.product-desc .left .not-available{
+    padding: 20px;
+    background-color: rgb(255, 47, 47);
+    width: fit-content;
+    text-transform: uppercase;
+    border-radius: 10px;
+
+
+}
+.product-desc .left .b-not-available{
+
+        width: 150px;
+        height: 40px;
+        border: none;
+        background-color: gray  ;
+        color: var(--p-color);
+        font-weight: 500;
+        font-size: 1rem;
+        text-transform: uppercase;
+        border: 2px solid transparent;
+        transition: all 0.2s ease;
+  
+        border-radius: 5px;
+
+}
+
+.comments-container{
+    background-color: var(--t-color);
+    box-shadow: 1px 1px 3px 2px rgba(0, 0, 0, 0.447);
+  padding: 20px;
+  margin: 20px ;
+
+}
+.comments-container .comment{
+    width: 80%;
+    border: 2px solid rgba(64, 41, 64, 0.45);
+    border-radius:  5px;
+    display: flex ;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: var(--p-color);
+}
+
+.comments-container .comment h4{
+    color: var(--s-color);
+    text-decoration: underline;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+
+.product-review{
+position: relative;
+width: 100%;
+
+}
+.product-review .open-review{
+    position: relative;
+    top: -45px;
+    left: 50%;
+   
+}
+.product-review .open-review .button{
+    box-shadow: 2px 2px 10px black;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.product-review .add-review{
+    width: 70%;
+    padding: 20px 40px;
+    margin: 0 auto;
+    background-color: var(--t-color);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.295);
+    display: flex;
+    flex-direction: column;
+gap: 20px;
+margin-top: -70px;
+justify-content: space-between;
+transition: all 0.3s ease;
+}
+.product-review .add-review-close{
+    height:0;
+    visibility: hidden;
+    opacity: 0;
+ 
+}
+.product-review .add-review-open{
+    height:100%;
+    visibility: visible;
+    opacity: 1;
+ 
+}
+
+.product-review .add-review textarea{
+    width: 80%;
+    resize: none;
+    padding: 20px 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
+
+
+}

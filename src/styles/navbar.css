@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+  align-items: center;
+  text-transform: capitalize;
+  font-weight: 700;
+  background-color: var(--t-color);
+  color: var(--p-color);
+  height: 70px;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.393);
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 50000;
+}
+.navbar img {
+  height: 120px;
+}
+.navbar .avatar{
+  height: 50px;
+  border: 1px solid black;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.navbar div {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.navbar div p {
+  font-size: 1.2rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.navbar div p:hover {
+  color: var(--s-color);
+  scale: 1.1;
+}
+.navbar div p:active {
+  scale: 0.9;
+}
+
+.navbar .active{
+  color: violet !important;
+}
